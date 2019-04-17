@@ -1,0 +1,2 @@
+URL
+https://github.com/ie03-aizu-2019/ie03project-team_kabao_kun.git;
