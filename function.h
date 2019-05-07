@@ -21,7 +21,7 @@ void out(inputdata data){
 }
 
 int function1(int mat[4][2]){
-  return ((mat[1][0]-mat[0][0])*(mat[2][1]-mat[3][1])+(mat[3][0]-mat[2][0])*(mat[1][1]-mat[0][0]));
+  return ((mat[1][0]-mat[0][0])*(mat[2][1]-mat[3][1])+(mat[3][0]-mat[2][0])*(mat[1][1]-mat[0][1]));
 }
 
 double calc_S(int mat[4][2], int abs_A){

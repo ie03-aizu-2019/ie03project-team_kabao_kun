@@ -42,7 +42,7 @@ int main(){
   if(abs_A != 0){
     s = calc_S(mat, abs_A);
     t = calc_T(mat, abs_A);
-    if((0<=s && s<=1) && (0<=t && t<=1)){
+    if((0<s && s<1) && (0<t && t<1)){
       x = mat[0][0]+(mat[1][0]-mat[0][0])*s;
       y = mat[2][1]+(mat[3][1]-mat[2][1])*t;
       judge = 1;
