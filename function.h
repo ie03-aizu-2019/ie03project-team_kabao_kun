@@ -35,3 +35,23 @@ double calc_T(int mat[4][2], int abs_A){
   t = ((mat[0][1]-mat[1][1])*(mat[2][0]-mat[0][0])+(mat[1][0]-mat[0][0])*(mat[2][1]-mat[0][1]));
   return t/abs_A;
 }
+
+
+void sort(double point[500][2], int cnt){
+  int i, j;
+  double tmp[2]={};
+  for(i=0; i<cnt-1; i++){
+    for(j=cnt-1; j>i; j--){
+      if(point[j-1][0] > point[j][0]){
+	tmp[0] = point[j-1][0];
+	tmp[1] = point[j-1][1];
+
+	point[j-1][0] = point[j][0];
+	point[j-1][1] = point[j][1];
+
+	point[j][0] = tmp[0];
+	point[j][1] = tmp[1];
+      }
+    }
+  }
+}
